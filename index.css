@@ -1,0 +1,75 @@
+html, body {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    display: -webkit-flex;
+    min-width: 400px;
+  }
+
+  #background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* transition: opacity 0.5s ease-in-out;
+    top: 0;
+    left: 0; */
+  }
+
+  #ville {
+    text-transform: capitalize;
+    font-size: 2em;
+  }
+
+  #temperature {
+    font-size: 4em;
+    background: rgba(8, 33, 41, 0.235);
+    border-radius: 20px;
+  }
+
+  #description {
+    display: flex;
+    align-items: center;
+    background: rgba(152, 164, 168, 0.505);
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 60%;
+  }
+
+
+  #changer {
+    background: rgba(39, 41, 42, 0.491);
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  /* #background.fade-out {
+    opacity: 0;
+  } */
+
+  /* .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 40px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 0 80px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+      padding: 0;
+    }
+  } */

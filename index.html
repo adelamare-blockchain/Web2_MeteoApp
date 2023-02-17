@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Mon premier site de météo, basé sur l'API d'Oepnweather." />
+    <link rel="icon" type="image/png" href="chemin/vers/mon/icon.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body id="background">
+    <div class="container">
+  
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- Titre -->
+            <h1 class="text-center mt-5">Météo</h1>
+            <div class="text-center">
+              <span id="ville">paris</span>
+              <!-- Temperature -->
+              <div id="temperature" class="mt-2 p-3 text-uppercase">
+                <span id="temperature_label">
+                  xx.x
+                </span> °C
+                <!-- Temps -->
+                <div id="description" class="text-center">
+                  <img id="icone" src="" alt="icone de la météo">
+                    <span id="temps">
+                        xxxx
+                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <!-- Changer -->
+            <div id="changer" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase d-inline-block btn btn-dark">
+              Changer de ville
+            </div>
+          </div> 
+        </div>
+    </div>
+    <script src="MeteoApp.js" defer></script>
+</body>
+</html>
