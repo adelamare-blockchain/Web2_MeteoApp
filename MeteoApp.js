@@ -21,7 +21,7 @@ document.querySelector('#changer').addEventListener('click', () => {
 // Vérification de validité de la ville
 function verifierVille(ville) {
     // Envoie une requête à l'API OpenWeather pour vérifier si la ville existe
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=b001ce6878ce7076f54db52f54744d2d&units=metric&lang=fr`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid={API key}&units=metric&lang=fr`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Ville non trouvée');
@@ -37,7 +37,7 @@ function verifierVille(ville) {
 function recevoirMeteo(ville){
 
     // Récupération de l'url de l'API
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=b001ce6878ce7076f54db52f54744d2d&units=metric&lang=' + langueParDefaut;
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid={API key}&units=metric&lang=' + langueParDefaut;
 
     // Etape 2 : créer une requete
     let requete = new XMLHttpRequest(); // Créer un objet
